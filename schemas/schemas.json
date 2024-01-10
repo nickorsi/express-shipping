@@ -1,0 +1,31 @@
+"use strict";
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://express-shipply.com/order.schema.json",
+  "title": "Order",
+  "description": "Order details for shipping.",
+  "type": "object",
+  "properties": {
+    "productID": {
+      "type": "integer",
+      "minimum": 1000
+    },
+    "name": {
+      "type": "string"
+    },
+    "addr": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+  },
+  "additionalProperties": false,
+  "required": [
+    "productID",
+    "name",
+    "adrr",
+    "zip"
+  ]
+}
