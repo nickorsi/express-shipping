@@ -17,9 +17,10 @@ const { shipProduct } = require("../shipItApi");
  */
 
 router.post("/", async function (req, res, next) {
-  if (req.body === undefined) {
-    throw new BadRequestError();
-  }
+  // if (req.body === undefined) {
+  //   throw new BadRequestError();
+  // }
+  //TODO: already checking if there's a body with the jsonschema
 
   const result = jsonschema.validate(
     req.body, orderSchema, {required: true}

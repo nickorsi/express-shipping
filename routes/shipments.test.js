@@ -27,10 +27,12 @@ describe("POST /", function () {
 
     const resp = await request(app)
       .post("/shipments")
-      .send({productId: 1000,
+      .send({
+        productId: 1000,
         name: 23455,
         addr: "100 Test St",
-        zip: "12345-6789",});
+        zip: "12345-6789",
+    });
     expect(resp.statusCode).toEqual(400)
 
   })
