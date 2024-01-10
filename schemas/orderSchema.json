@@ -7,7 +7,7 @@
   "description": "Order details for shipping.",
   "type": "object",
   "properties": {
-    "productID": {
+    "productId": {
       "type": "integer",
       "minimum": 1000
     },
@@ -23,9 +23,9 @@
   },
   "additionalProperties": false,
   "required": [
-    "productID",
+    "productId",
     "name",
-    "adrr",
+    "addr",
     "zip"
   ]
 }
